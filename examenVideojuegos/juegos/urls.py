@@ -1,12 +1,11 @@
 from django.urls import path
 from . import views
 
-
-HANDLER400 = 'juegos.views_errores.error_400'
-HANDLER402 = 'juegos.views_errores.error_402'
-HANDLER403 = 'juegos.views_errores.error_403'
-HANDLER404 = 'juegos.views_errores.error_404'
-HANDLER500 = 'juegos.views_errores.error_500'
+HANDLER400 = 'juegos.views.error_400'
+HANDLER402 = 'juegos.views.error_402'
+HANDLER403 = 'juegos.views.error_403'
+HANDLER404 = 'juegos.views.error_404'
+HANDLER500 = 'juegos.views.error_500'
 
 
 urlpatterns = [

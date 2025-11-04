@@ -1,6 +1,21 @@
 from django.shortcuts import render
 from django.db.models import Avg
 from .models import *
+from django.views.defaults import page_not_found
+
+def error_400(request, exception=None):
+    return render(request, 'errores/400.html', None, None, 400)
+
+def error_403(request, exception=None):
+    return render(request, 'errores/403.html', None, None, 403)
+
+def error_404(request, exception=None):
+    return render(request, 'errores/404.html', None, None, 404)
+
+def error_500(request, exception=None):
+    return render(request, 'errores/500.html', None, None, 500)
+
+
 
 def index(request):
     return render(request, 'index.html')
