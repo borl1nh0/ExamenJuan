@@ -1,0 +1,6 @@
+<h1>Ejercicio 6</h1>
+{% if analisis %}
+<p>{{ analisis.videojuego.titulo }} - {{ analisis.puntuacion }} - {{ analisis.critico.nombre }}</p>
+{% else %}
+<p>No se encontró ningún análisis.</p>
+{% endif %}
